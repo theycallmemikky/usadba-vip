@@ -289,7 +289,7 @@ export default function HomePage() {
       {/* CTA BANNER */}
       <section className="relative overflow-hidden">
         <Image
-          src="/Usadba/territory/territory_cottages/a963d010.jpg"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Usadba/territory/territory_cottages/a963d010.jpg`}
           alt="Усадьба VIP Сочи"
           fill
           className="object-cover"

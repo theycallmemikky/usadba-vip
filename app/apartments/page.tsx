@@ -20,7 +20,7 @@ export default function ApartmentsPage() {
       {/* Page Hero */}
       <section className="relative h-72 md:h-96 flex items-end overflow-hidden">
         <Image
-          src="/Usadba/apartments/apartments%207/apartamenty-7-v-kottedzhe-7-photo-big.jpg"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Usadba/apartments/apartments%207/apartamenty-7-v-kottedzhe-7-photo-big.jpg`}
           alt="Апартаменты Усадьба VIP"
           fill
           priority

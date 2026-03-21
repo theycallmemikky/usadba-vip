@@ -20,7 +20,7 @@ export default function CottagesPage() {
       {/* Page Hero */}
       <section className="relative h-72 md:h-96 flex items-end overflow-hidden">
         <Image
-          src="/Usadba/cottages/cottage%205/prezidentskii-kottedzh-5-photos-big.jpg"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Usadba/cottages/cottage%205/prezidentskii-kottedzh-5-photos-big.jpg`}
           alt="Коттеджи Усадьба VIP"
           fill
           priority
