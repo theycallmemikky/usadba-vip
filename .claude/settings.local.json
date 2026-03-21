@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:usadba-vip.ru)",
+      "Bash(xargs grep:*)",
+      "Bash(npm run:*)"
+    ]
+  }
+}
