@@ -262,23 +262,26 @@ export default function HomePage() {
             />
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {["/Usadba/videos/vid1.mp4", "/Usadba/videos/vid2.mp4", "/Usadba/videos/vid3.mp4"].map((src, i) => (
-              <AnimatedSection key={src} delay={i * 120}>
-                <div
-                  className="rounded-2xl overflow-hidden"
-                  style={{ border: "1px solid var(--color-border-gold)", background: "var(--color-card)" }}
-                >
-                  <video
-                    src={src}
-                    controls
-                    playsInline
-                    preload="metadata"
-                    className="w-full"
-                    style={{ display: "block", aspectRatio: "16/9", objectFit: "cover" }}
-                  />
-                </div>
-              </AnimatedSection>
-            ))}
+            {["vid1.mp4", "vid2.mp4", "vid3.mp4"].map((file, i) => {
+              const src = `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Usadba/videos/${file}`;
+              return (
+                <AnimatedSection key={src} delay={i * 120}>
+                  <div
+                    className="rounded-2xl overflow-hidden"
+                    style={{ border: "1px solid var(--color-border-gold)", background: "var(--color-card)" }}
+                  >
+                    <video
+                      src={src}
+                      controls
+                      playsInline
+                      preload="metadata"
+                      className="w-full"
+                      style={{ display: "block", aspectRatio: "16/9", objectFit: "cover" }}
+                    />
+                  </div>
+                </AnimatedSection>
+              );
+            })}
           </div>
         </div>
       </section>

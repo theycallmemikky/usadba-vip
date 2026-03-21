@@ -8,10 +8,11 @@ import AnimatedSection from "@/components/AnimatedSection";
 import SectionHeader from "@/components/SectionHeader";
 
 const categories = ["Все", "Коттеджи", "Апартаменты", "Территория", "Видео"];
+const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const videos = [
-  { src: "/Usadba/videos/vid1.mp4", title: "Усадьба VIP — обзор комплекса" },
-  { src: "/Usadba/videos/vid2.mp4", title: "Коттеджи и апартаменты" },
-  { src: "/Usadba/videos/vid3.mp4", title: "Территория и инфраструктура" },
+  { src: `${base}/Usadba/videos/vid1.mp4`, title: "Усадьба VIP — обзор комплекса" },
+  { src: `${base}/Usadba/videos/vid2.mp4`, title: "Коттеджи и апартаменты" },
+  { src: `${base}/Usadba/videos/vid3.mp4`, title: "Территория и инфраструктура" },
 ];
 
 export default function GalleryPage() {
