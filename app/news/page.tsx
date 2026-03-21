@@ -48,7 +48,7 @@ export default function NewsPage() {
                   className="object-cover"
                   unoptimized
                 />
-                <div className="absolute inset-0" style={{ background: "rgba(10,10,18,0.3)" }} />
+                <div className="absolute inset-0" style={{ background: "rgba(7,9,11,0.3)" }} />
               </div>
               <div className="p-10 flex flex-col justify-center" style={{ background: "var(--color-card)" }}>
                 <div className="flex items-center gap-4 mb-6">
@@ -87,7 +87,7 @@ export default function NewsPage() {
               >
                 <div className="relative h-56">
                   <Image src={n.image} alt={n.title} fill className="object-cover" unoptimized />
-                  <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(10,10,18,0.8), transparent)" }} />
+                  <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(7,9,11,0.8), transparent)" }} />
                 </div>
                 <div className="p-8">
                   <div className="flex items-center gap-4 mb-4">

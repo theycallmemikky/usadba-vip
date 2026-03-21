@@ -36,10 +36,10 @@ export default function Navbar() {
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
         style={{
           background: scrolled
-            ? "rgba(10, 10, 18, 0.95)"
-            : "linear-gradient(to bottom, rgba(10,10,18,0.85), transparent)",
+            ? "rgba(245, 241, 235, 0.97)"
+            : "linear-gradient(to bottom, rgba(7,9,11,0.6), transparent)",
           backdropFilter: scrolled ? "blur(16px)" : "none",
-          borderBottom: scrolled ? "1px solid rgba(201,168,76,0.15)" : "none",
+          borderBottom: scrolled ? "1px solid var(--color-border)" : "none",
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,7 +54,7 @@ export default function Navbar() {
               </span>
               <span
                 className="text-xs tracking-[0.35em] uppercase"
-                style={{ color: "var(--color-gold-muted)", letterSpacing: "0.35em" }}
+                style={{ color: scrolled ? "var(--color-gold-muted)" : "rgba(200,220,230,0.8)", letterSpacing: "0.35em" }}
               >
                 VIP · СОЧИ
               </span>
@@ -71,7 +71,7 @@ export default function Navbar() {
                     color:
                       pathname === l.href
                         ? "var(--color-gold)"
-                        : "var(--color-text-muted)",
+                        : scrolled ? "var(--color-text-muted)" : "rgba(230,235,238,0.85)",
                     letterSpacing: "0.1em",
                   }}
                 >
@@ -119,7 +119,7 @@ export default function Navbar() {
       >
         <div
           className="absolute inset-0"
-          style={{ background: "rgba(10,10,18,0.97)", backdropFilter: "blur(20px)" }}
+          style={{ background: "rgba(245,241,235,0.98)", backdropFilter: "blur(20px)" }}
           onClick={() => setMenuOpen(false)}
         />
         <nav className="relative flex flex-col items-center justify-center h-full gap-8">

@@ -56,27 +56,27 @@ export default function HomePage() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(135deg, rgba(10,10,18,0.92) 0%, rgba(10,10,18,0.65) 50%, rgba(10,10,18,0.5) 100%)",
+              "linear-gradient(135deg, rgba(7,9,11,0.93) 0%, rgba(7,9,11,0.65) 50%, rgba(7,9,11,0.5) 100%)",
           }}
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at 30% 50%, rgba(201,168,76,0.06) 0%, transparent 60%)",
+              "radial-gradient(ellipse at 30% 50%, rgba(95,125,140,0.09) 0%, transparent 60%)",
           }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <div className="max-w-3xl">
             <p
               className="text-xs tracking-[0.4em] uppercase mb-8 font-semibold"
-              style={{ color: "var(--color-gold)" }}
+              style={{ color: "var(--color-gold-light)" }}
             >
               ✦ Элитный отдых в Сочи ✦
             </p>
             <h1
               className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-none mb-8"
-              style={{ fontFamily: "var(--font-display)", color: "var(--color-text)" }}
+              style={{ fontFamily: "var(--font-display)", color: "#f0ede6" }}
             >
               Усадьба
               <br />
@@ -84,7 +84,7 @@ export default function HomePage() {
             </h1>
             <p
               className="text-lg md:text-xl leading-relaxed mb-10 max-w-xl"
-              style={{ color: "var(--color-text-muted)" }}
+              style={{ color: "rgba(224,232,236,0.85)" }}
             >
               Коттеджи, апартаменты и виллы класса люкс с панорамным видом на
               Чёрное море в Хостинском районе Сочи.
@@ -99,7 +99,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/contacts"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded btn-outline-gold text-sm"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded btn-outline-light text-sm"
               >
                 Связаться с нами
               </Link>
@@ -107,7 +107,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-          <span className="text-xs tracking-widest uppercase" style={{ color: "var(--color-text-dim)" }}>
+          <span className="text-xs tracking-widest uppercase" style={{ color: "rgba(200,218,226,0.6)" }}>
             Листать
           </span>
           <div
@@ -295,15 +295,15 @@ export default function HomePage() {
           className="object-cover"
           unoptimized
         />
-        <div className="absolute inset-0" style={{ background: "rgba(10,10,18,0.82)" }} />
+        <div className="absolute inset-0" style={{ background: "rgba(7,9,11,0.84)" }} />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-28 text-center">
           <AnimatedSection>
-            <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: "var(--color-gold)" }}>
+            <p className="text-xs tracking-[0.3em] uppercase mb-6" style={{ color: "var(--color-gold-light)" }}>
               Забронируйте прямо сейчас
             </p>
             <h2
               className="font-display text-4xl md:text-6xl font-light mb-8"
-              style={{ fontFamily: "var(--font-display)", color: "var(--color-text)" }}
+              style={{ fontFamily: "var(--font-display)", color: "#f0ede6" }}
             >
               Ваш идеальный отдых
               <br />
@@ -314,7 +314,7 @@ export default function HomePage() {
                 <Phone size={16} />
                 +7 988 880-00-04
               </a>
-              <Link href="/contacts" className="inline-flex items-center gap-2 px-8 py-4 rounded btn-outline-gold text-sm">
+              <Link href="/contacts" className="inline-flex items-center gap-2 px-8 py-4 rounded btn-outline-light text-sm">
                 <MapPin size={16} />
                 Как добраться
               </Link>

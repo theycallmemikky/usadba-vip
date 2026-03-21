@@ -110,7 +110,7 @@ export default function GalleryPage() {
                 />
                 <div
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4"
-                  style={{ background: "linear-gradient(to top, rgba(10,10,18,0.8), transparent)" }}
+                  style={{ background: "linear-gradient(to top, rgba(7,9,11,0.85), transparent)" }}
                 >
                   <span className="text-sm" style={{ color: "var(--color-gold-light)" }}>
                     {img.alt}
@@ -127,7 +127,7 @@ export default function GalleryPage() {
       {lightbox && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center p-4"
-          style={{ background: "rgba(10,10,18,0.95)" }}
+          style={{ background: "rgba(7,9,11,0.96)" }}
           onClick={() => setLightbox(null)}
         >
           <button

@@ -29,15 +29,15 @@ export default function ApartmentsPage() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(to top, rgba(10,10,18,1) 0%, rgba(10,10,18,0.5) 100%)" }}
+          style={{ background: "linear-gradient(to top, rgba(7,9,11,1) 0%, rgba(7,9,11,0.5) 100%)" }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full">
-          <p className="text-xs tracking-[0.3em] uppercase mb-3" style={{ color: "var(--color-gold)" }}>
+          <p className="text-xs tracking-[0.3em] uppercase mb-3" style={{ color: "var(--color-gold-light)" }}>
             Усадьба VIP
           </p>
           <h1
             className="font-display text-4xl md:text-6xl font-light"
-            style={{ fontFamily: "var(--font-display)", color: "var(--color-text)" }}
+            style={{ fontFamily: "var(--font-display)", color: "#f0ede6" }}
           >
             Апартаменты и квартиры
           </h1>
