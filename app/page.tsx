@@ -45,18 +45,19 @@ export default function HomePage() {
       {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <Image
-          src="https://usadba-vip.ru/upload/000/u1/c/7/a0fd6e0d.jpg"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Usadba/territory/territory_cottages/a963d010.jpg`}
           alt="Комплекс Усадьба VIP Сочи"
           fill
           priority
           className="object-cover"
+          style={{ objectPosition: "center 30%", filter: "contrast(1.08) saturate(1.18) brightness(0.92)" }}
           unoptimized
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(135deg, rgba(7,9,11,0.93) 0%, rgba(7,9,11,0.65) 50%, rgba(7,9,11,0.5) 100%)",
+              "linear-gradient(135deg, rgba(7,9,11,0.82) 0%, rgba(7,9,11,0.52) 50%, rgba(7,9,11,0.35) 100%)",
           }}
         />
         <div
@@ -289,10 +290,11 @@ export default function HomePage() {
       {/* CTA BANNER */}
       <section className="relative overflow-hidden">
         <Image
-          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Usadba/territory/territory_cottages/a963d010.jpg`}
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Usadba/territory/territory_cottages/97a7f7d9.jpg`}
           alt="Усадьба VIP Сочи"
           fill
           className="object-cover"
+          style={{ objectPosition: "center 40%", filter: "contrast(1.05) saturate(1.12) brightness(0.9)" }}
           unoptimized
         />
         <div className="absolute inset-0" style={{ background: "rgba(7,9,11,0.84)" }} />
