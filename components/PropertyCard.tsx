@@ -37,14 +37,14 @@ export default function PropertyCard({ property }: { property: Property }) {
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(to top, rgba(10,10,18,0.8) 0%, transparent 60%)",
+            background: "linear-gradient(to top, rgba(7,9,11,0.85) 0%, transparent 60%)",
           }}
         />
         <span
           className="absolute top-4 left-4 text-xs tracking-widest uppercase px-3 py-1 rounded"
           style={{
-            background: "rgba(201,168,76,0.15)",
-            border: "1px solid rgba(201,168,76,0.3)",
+            background: "rgba(95,125,140,0.15)",
+            border: "1px solid rgba(95,125,140,0.3)",
             color: "var(--color-gold-light)",
             backdropFilter: "blur(8px)",
           }}

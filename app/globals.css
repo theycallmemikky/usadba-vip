@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gold: #c9a84c;
-  --color-gold-light: #e8c97a;
-  --color-gold-muted: #8b6914;
-  --color-gold-dim: #3d2e0a;
-  --color-navy: #0a0a12;
-  --color-navy-2: #0f0f1a;
-  --color-navy-3: #13131f;
-  --color-card: #16161e;
-  --color-border: #1e1e2e;
-  --color-border-gold: #2e2510;
-  --color-text: #f0ede6;
-  --color-text-muted: #9b9b8f;
-  --color-text-dim: #5a5a52;
+  --color-gold: #5f7d8c;
+  --color-gold-light: #8eb4c4;
+  --color-gold-muted: #3d5e6e;
+  --color-gold-dim: #d4eaf2;
+  --color-navy: #f5f1eb;
+  --color-navy-2: #ede7dc;
+  --color-navy-3: #e4dcd0;
+  --color-card: #ffffff;
+  --color-border: #ddd5c8;
+  --color-border-gold: #b8cdd6;
+  --color-text: #1c2b32;
+  --color-text-muted: #5a7280;
+  --color-text-dim: #9aafb8;
 
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-body: "Inter", system-ui, sans-serif;
@@ -112,7 +112,7 @@
   }
 
   .card-glass {
-    background: rgba(22, 22, 30, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(12px);
     border: 1px solid var(--color-border);
   }
@@ -123,20 +123,20 @@
 
   .card-glass-hover:hover {
     border-color: var(--color-gold-muted);
-    box-shadow: 0 0 30px rgba(201, 168, 76, 0.1);
+    box-shadow: 0 0 30px rgba(95, 125, 140, 0.12);
     transform: translateY(-4px);
   }
 
   .btn-gold {
     background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold));
-    color: var(--color-navy);
+    color: var(--color-text);
     font-weight: 600;
     letter-spacing: 0.05em;
     transition: all 0.3s ease;
   }
 
   .btn-gold:hover {
-    box-shadow: 0 0 25px rgba(201, 168, 76, 0.4);
+    box-shadow: 0 0 25px rgba(95, 125, 140, 0.45);
     transform: translateY(-1px);
   }
 
@@ -150,8 +150,23 @@
 
   .btn-outline-gold:hover {
     background: var(--color-gold);
-    color: var(--color-navy);
-    box-shadow: 0 0 20px rgba(201, 168, 76, 0.3);
+    color: var(--color-text);
+    box-shadow: 0 0 20px rgba(95, 125, 140, 0.35);
+  }
+
+  /* For use on top of dark photo overlays */
+  .btn-outline-light {
+    border: 1px solid rgba(224, 234, 238, 0.7);
+    color: rgba(224, 234, 238, 0.9);
+    background: transparent;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline-light:hover {
+    background: rgba(224, 234, 238, 0.15);
+    border-color: rgba(224, 234, 238, 0.9);
+    color: #ffffff;
   }
 
   .section-padding {

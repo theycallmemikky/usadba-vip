@@ -58,14 +58,14 @@ export default function PropertyDetailPage({ property, backHref, backLabel }: Pr
         />
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(to top, rgba(10,10,18,1) 0%, rgba(10,10,18,0.3) 100%)" }}
+          style={{ background: "linear-gradient(to top, rgba(7,9,11,1) 0%, rgba(7,9,11,0.3) 100%)" }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full">
           <span
             className="inline-block text-xs tracking-widest uppercase px-3 py-1 rounded mb-4"
             style={{
-              background: "rgba(201,168,76,0.15)",
-              border: "1px solid rgba(201,168,76,0.3)",
+              background: "rgba(95,125,140,0.15)",
+              border: "1px solid rgba(95,125,140,0.3)",
               color: "var(--color-gold-light)",
               backdropFilter: "blur(8px)",
             }}
@@ -74,7 +74,7 @@ export default function PropertyDetailPage({ property, backHref, backLabel }: Pr
           </span>
           <h1
             className="font-display text-4xl md:text-6xl font-light"
-            style={{ fontFamily: "var(--font-display)", color: "var(--color-text)" }}
+            style={{ fontFamily: "var(--font-display)", color: "#f0ede6" }}
           >
             {property.title}
           </h1>
@@ -252,7 +252,7 @@ export default function PropertyDetailPage({ property, backHref, backLabel }: Pr
                     />
                     <div
                       className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                      style={{ background: "rgba(201,168,76,0.12)" }}
+                      style={{ background: "rgba(95,125,140,0.12)" }}
                     />
                   </button>
                 </AnimatedSection>
