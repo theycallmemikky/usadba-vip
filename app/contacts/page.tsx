@@ -141,7 +141,7 @@ export default function ContactsPage() {
             style={{ border: "1px solid var(--color-border)", height: 400 }}
           >
             <iframe
-              src="https://yandex.ru/map-widget/v1/?ll=39.7%2C43.55&z=14&pt=39.700,43.550&l=map"
+              src="https://yandex.ru/map-widget/v1/?ll=39.7913%2C43.5569&z=15&pt=39.791335,43.556903&l=map"
               width="100%"
               height="100%"
               frameBorder="0"
