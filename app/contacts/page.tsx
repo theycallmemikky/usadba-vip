@@ -112,7 +112,7 @@ export default function ContactsPage() {
                     className="flex items-center gap-2 px-5 py-3 rounded-xl btn-outline-gold text-sm flex-1 justify-center"
                   >
                     <MessageCircle size={16} />
-                    VK MAX
+                    MAX
                   </a>
                   <a
                     href="https://t.me/+79888800004"

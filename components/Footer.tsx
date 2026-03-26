@@ -53,7 +53,7 @@ export default function Footer() {
                 className="flex items-center gap-2 px-4 py-2 rounded text-xs btn-outline-gold"
               >
                 <MessageCircle size={14} />
-                VK MAX
+                MAX
               </a>
               <a
                 href="https://t.me/+79888800004"

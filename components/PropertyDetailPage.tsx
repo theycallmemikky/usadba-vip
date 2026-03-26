@@ -210,7 +210,7 @@ export default function PropertyDetailPage({ property, backHref, backLabel }: Pr
                   className="flex items-center justify-center gap-2 w-full py-3 rounded text-sm btn-outline-gold"
                 >
                   <MessageCircle size={15} />
-                  VK MAX
+                  MAX
                 </a>
               </div>
             </AnimatedSection>
