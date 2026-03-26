@@ -2,7 +2,7 @@ import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 import AnimatedSection from "@/components/AnimatedSection";
 import PropertyCard from "@/components/PropertyCard";
-import { apartments } from "@/lib/data";
+import { flats } from "@/lib/data";
 import { Tv, Wind, Coffee, ShowerHead, Lock, Shirt } from "lucide-react";
 
 const amenities = [
@@ -14,14 +14,14 @@ const amenities = [
   { icon: Shirt, label: "Ежедневная уборка" },
 ];
 
-export default function ApartmentsPage() {
+export default function FlatsPage() {
   return (
     <>
       {/* Page Hero */}
       <section className="relative h-72 md:h-96 flex items-end overflow-hidden">
         <Image
-          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Usadba/apartments/apartments%207/apartamenty-7-v-kottedzhe-7-photo-big.jpg`}
-          alt="Апартаменты Усадьба VIP"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Usadba/flats/flat%206-2%20gollandkiy/kvartira-6-2-zhk-gollandskii-photo-big.jpg`}
+          alt="Квартиры Усадьба VIP"
           fill
           priority
           className="object-cover"
@@ -39,25 +39,25 @@ export default function ApartmentsPage() {
             className="font-display text-4xl md:text-6xl font-light"
             style={{ fontFamily: "var(--font-display)", color: "#f0ede6" }}
           >
-            Апартаменты
+            Квартиры
           </h1>
         </div>
       </section>
 
-      {/* Apartments in Cottages */}
+      {/* Flats listing */}
       <section className="section-padding max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <SectionHeader
-            eyebrow="В коттеджном комплексе"
-            title="Апартаменты"
-            subtitle="Стильные апартаменты с дизайнерским ремонтом, видом на море и всеми удобствами комплекса"
+            eyebrow="В жилых комплексах"
+            title="Квартиры"
+            subtitle="Квартиры с видом на море в жилых комплексах и клубных домах района Хоста"
           />
         </AnimatedSection>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-          {apartments.map((a, i) => (
-            <AnimatedSection key={a.id} delay={i * 100}>
-              <PropertyCard property={a} />
+          {flats.map((f, i) => (
+            <AnimatedSection key={f.id} delay={i * 100}>
+              <PropertyCard property={f} />
             </AnimatedSection>
           ))}
         </div>
@@ -68,7 +68,7 @@ export default function ApartmentsPage() {
           <SectionHeader
             eyebrow="Оснащение"
             title="Продумано до мелочей"
-            subtitle="Каждый апартамент оборудован всем необходимым для комфортного и приятного пребывания"
+            subtitle="Каждая квартира оборудована всем необходимым для комфортного и приятного пребывания"
           />
         </AnimatedSection>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">

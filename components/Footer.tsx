@@ -4,6 +4,7 @@ import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 const navLinks = [
   { href: "/cottages", label: "Коттеджи" },
   { href: "/apartments", label: "Апартаменты" },
+  { href: "/flats", label: "Квартиры" },
   { href: "/gallery", label: "Галерея" },
   { href: "/reviews", label: "Отзывы" },
   { href: "/news", label: "Новости" },
@@ -46,13 +47,13 @@ export default function Footer() {
             {/* Messengers */}
             <div className="flex gap-3 mt-6">
               <a
-                href="https://wa.me/79888800004"
+                href="https://max.ru/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 rounded text-xs btn-outline-gold"
               >
                 <MessageCircle size={14} />
-                WhatsApp
+                VK MAX
               </a>
               <a
                 href="https://t.me/+79888800004"

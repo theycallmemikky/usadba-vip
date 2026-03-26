@@ -106,13 +106,13 @@ export default function ContactsPage() {
                 </p>
                 <div className="flex gap-3">
                   <a
-                    href="https://wa.me/79888800004"
+                    href="https://max.ru/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 px-5 py-3 rounded-xl btn-outline-gold text-sm flex-1 justify-center"
                   >
                     <MessageCircle size={16} />
-                    WhatsApp
+                    VK MAX
                   </a>
                   <a
                     href="https://t.me/+79888800004"

@@ -18,7 +18,7 @@ export default async function FlatDetailPage({
   return (
     <PropertyDetailPage
       property={flat}
-      backHref="/apartments"
+      backHref="/flats"
       backLabel="Квартиры"
     />
   );

@@ -204,16 +204,13 @@ export default function PropertyDetailPage({ property, backHref, backLabel }: Pr
                   +7 988 880-00-04
                 </a>
                 <a
-                  href="https://wa.me/79888800004"
-                  className="flex items-center justify-center gap-2 w-full py-3 rounded text-sm"
-                  style={{
-                    background: "rgba(37,211,102,0.1)",
-                    border: "1px solid rgba(37,211,102,0.3)",
-                    color: "#25d366",
-                  }}
+                  href="https://max.ru/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full py-3 rounded text-sm btn-outline-gold"
                 >
                   <MessageCircle size={15} />
-                  WhatsApp
+                  VK MAX
                 </a>
               </div>
             </AnimatedSection>

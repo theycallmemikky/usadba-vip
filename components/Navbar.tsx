@@ -9,6 +9,7 @@ const links = [
   { href: "/", label: "Главная" },
   { href: "/cottages", label: "Коттеджи" },
   { href: "/apartments", label: "Апартаменты" },
+  { href: "/flats", label: "Квартиры" },
   { href: "/gallery", label: "Галерея" },
   { href: "/reviews", label: "Отзывы" },
   { href: "/news", label: "Новости" },
