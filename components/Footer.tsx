@@ -47,7 +47,7 @@ export default function Footer() {
             {/* Messengers */}
             <div className="flex gap-3 mt-6">
               <a
-                href="https://max.ru/"
+                href="https://max.ru/u/f9LHodD0cOIR__cZdie05pnHwEMWYzpGyp27pcPXnNoAdYHuko1Xvici1Ec"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 rounded text-xs btn-outline-gold"

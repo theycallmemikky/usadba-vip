@@ -204,7 +204,7 @@ export default function PropertyDetailPage({ property, backHref, backLabel }: Pr
                   +7 988 880-00-04
                 </a>
                 <a
-                  href="https://max.ru/"
+                  href="https://max.ru/u/f9LHodD0cOIR__cZdie05pnHwEMWYzpGyp27pcPXnNoAdYHuko1Xvici1Ec"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full py-3 rounded text-sm btn-outline-gold"
