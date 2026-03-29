@@ -3,15 +3,14 @@ import SectionHeader from "@/components/SectionHeader";
 import AnimatedSection from "@/components/AnimatedSection";
 import PropertyCard from "@/components/PropertyCard";
 import { flats } from "@/lib/data";
-import { Tv, Wind, Coffee, ShowerHead, Lock, Shirt } from "lucide-react";
+import { Wifi, Sofa, Monitor, Shirt, UtensilsCrossed } from "lucide-react";
 
 const amenities = [
-  { icon: Tv, label: "Smart TV" },
-  { icon: Wind, label: "Кондиционер" },
-  { icon: Coffee, label: "Кофемашина" },
-  { icon: ShowerHead, label: "Дождевой душ" },
-  { icon: Lock, label: "Электронный замок" },
-  { icon: Shirt, label: "Ежедневная уборка" },
+  { icon: Wifi, label: "Wi-Fi" },
+  { icon: Sofa, label: "Удобная мебель" },
+  { icon: Monitor, label: "Техника" },
+  { icon: Shirt, label: "Текстиль" },
+  { icon: UtensilsCrossed, label: "Посуда" },
 ];
 
 export default function FlatsPage() {
@@ -48,9 +47,9 @@ export default function FlatsPage() {
       <section className="section-padding max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
           <SectionHeader
-            eyebrow="В жилых комплексах"
+            eyebrow="Долгосрочная аренда"
             title="Квартиры"
-            subtitle="Квартиры с видом на море в жилых комплексах и клубных домах района Хоста"
+            subtitle="Долгосрочная аренда уютных квартир с видом на море в элитном охраняемом комплексе «Усадьба»"
           />
         </AnimatedSection>
 
@@ -71,7 +70,7 @@ export default function FlatsPage() {
             subtitle="Каждая квартира оборудована всем необходимым для комфортного и приятного пребывания"
           />
         </AnimatedSection>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
           {amenities.map((a, i) => (
             <AnimatedSection key={a.label} delay={i * 80}>
               <div className="flex flex-col items-center text-center gap-4 p-6 rounded-2xl" style={{ background: "var(--color-card)", border: "1px solid var(--color-border)" }}>

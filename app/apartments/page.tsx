@@ -3,15 +3,14 @@ import SectionHeader from "@/components/SectionHeader";
 import AnimatedSection from "@/components/AnimatedSection";
 import PropertyCard from "@/components/PropertyCard";
 import { apartments } from "@/lib/data";
-import { Tv, Wind, Coffee, ShowerHead, Lock, Shirt } from "lucide-react";
+import { Wifi, Sofa, Monitor, Shirt, UtensilsCrossed } from "lucide-react";
 
 const amenities = [
-  { icon: Tv, label: "Smart TV" },
-  { icon: Wind, label: "Кондиционер" },
-  { icon: Coffee, label: "Кофемашина" },
-  { icon: ShowerHead, label: "Дождевой душ" },
-  { icon: Lock, label: "Электронный замок" },
-  { icon: Shirt, label: "Ежедневная уборка" },
+  { icon: Wifi, label: "Wi-Fi" },
+  { icon: Sofa, label: "Удобная мебель" },
+  { icon: Monitor, label: "Техника" },
+  { icon: Shirt, label: "Текстиль" },
+  { icon: UtensilsCrossed, label: "Посуда" },
 ];
 
 export default function ApartmentsPage() {
@@ -50,7 +49,7 @@ export default function ApartmentsPage() {
           <SectionHeader
             eyebrow="В коттеджном комплексе"
             title="Апартаменты"
-            subtitle="Стильные апартаменты с дизайнерским ремонтом, видом на море и всеми удобствами комплекса"
+            subtitle="Стильные апартаменты с современным ремонтом, панорамным видом на море и всеми преимуществами комплекса для комфортной жизни и отдыха"
           />
         </AnimatedSection>
 
@@ -66,12 +65,12 @@ export default function ApartmentsPage() {
         <div className="gold-divider mb-20" />
         <AnimatedSection>
           <SectionHeader
-            eyebrow="Оснащение"
+            eyebrow="Всё включено"
             title="Продумано до мелочей"
-            subtitle="Каждый апартамент оборудован всем необходимым для комфортного и приятного пребывания"
+            subtitle="Каждый апартамент оборудован всем необходимым для комфортного и приятного проживания"
           />
         </AnimatedSection>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
           {amenities.map((a, i) => (
             <AnimatedSection key={a.label} delay={i * 80}>
               <div className="flex flex-col items-center text-center gap-4 p-6 rounded-2xl" style={{ background: "var(--color-card)", border: "1px solid var(--color-border)" }}>

@@ -13,6 +13,8 @@ import {
   BedDouble,
   Phone,
   MessageCircle,
+  CalendarDays,
+  Banknote,
 } from "lucide-react";
 import type { Property } from "./PropertyCard";
 import AnimatedSection from "./AnimatedSection";
@@ -111,6 +113,37 @@ export default function PropertyDetailPage({ property, backHref, backLabel }: Pr
                 {property.longDescription}
               </p>
             </AnimatedSection>
+
+            {property.type === "cottage" && property.price && (
+              <AnimatedSection delay={80}>
+                <h3
+                  className="font-display text-xl font-medium mb-4"
+                  style={{ fontFamily: "var(--font-display)", color: "var(--color-text)" }}
+                >
+                  Условия аренды
+                </h3>
+                <div
+                  className="p-6 rounded-2xl space-y-3"
+                  style={{ background: "var(--color-card)", border: "1px solid var(--color-border)" }}
+                >
+                  <div className="flex items-center gap-3">
+                    <CalendarDays size={18} style={{ color: "var(--color-gold)" }} />
+                    <span className="text-sm" style={{ color: "var(--color-text-muted)" }}>
+                      Аренда коттеджа: от 3-х суток и более
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Banknote size={18} style={{ color: "var(--color-gold)" }} />
+                    <span className="text-sm" style={{ color: "var(--color-text-muted)" }}>
+                      Стоимость суток: от {property.price.toLocaleString("ru-RU")} ₽
+                    </span>
+                  </div>
+                  <p className="text-xs pt-2" style={{ color: "var(--color-text-muted)", opacity: 0.7 }}>
+                    Стоимость аренды рассчитывается индивидуально в зависимости от срока проживания
+                  </p>
+                </div>
+              </AnimatedSection>
+            )}
 
             <AnimatedSection delay={100}>
               <h3

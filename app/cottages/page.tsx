@@ -11,7 +11,7 @@ const amenities = [
   { icon: TreePine, label: "Ландшафтный сад" },
   { icon: Wifi, label: "Высокоскоростной Wi-Fi" },
   { icon: Car, label: "Бесплатная парковка" },
-  { icon: UtensilsCrossed, label: "Оборудованная кухня" },
+  { icon: UtensilsCrossed, label: "Комфорт и уют" },
 ];
 
 export default function CottagesPage() {
@@ -68,7 +68,7 @@ export default function CottagesPage() {
           <SectionHeader
             eyebrow="Инфраструктура"
             title="Всё включено"
-            subtitle="Все коттеджи оснащены по высшему стандарту — ничего лишнего не нужно брать с собой"
+            subtitle="Все коттеджи полностью укомплектованы — ничего лишнего не нужно брать с собой"
           />
         </AnimatedSection>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">

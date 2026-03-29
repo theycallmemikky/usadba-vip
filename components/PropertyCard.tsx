@@ -15,6 +15,7 @@ export interface Property {
   description: string;
   longDescription: string;
   features: string[];
+  price?: number;
   href: string;
 }
 
@@ -25,7 +26,7 @@ export default function PropertyCard({ property }: { property: Property }) {
       style={{ border: "1px solid var(--color-border)" }}
     >
       {/* Image */}
-      <div className="relative overflow-hidden" style={{ height: 240 }}>
+      <Link href={property.href} className="relative overflow-hidden block cursor-pointer" style={{ height: 240 }}>
         <Image
           src={property.image}
           alt={property.title}
@@ -43,15 +44,15 @@ export default function PropertyCard({ property }: { property: Property }) {
         <span
           className="absolute top-4 left-4 text-xs tracking-widest uppercase px-3 py-1 rounded"
           style={{
-            background: "rgba(95,125,140,0.15)",
-            border: "1px solid rgba(95,125,140,0.3)",
-            color: "var(--color-gold-light)",
+            background: "rgba(7,9,11,0.65)",
+            border: "1px solid rgba(255,255,255,0.25)",
+            color: "#ffffff",
             backdropFilter: "blur(8px)",
           }}
         >
           {property.type === "cottage" ? "Коттедж" : property.type === "flat" ? "Квартира" : "Апартаменты"}
         </span>
-      </div>
+      </Link>
 
       {/* Content */}
       <div className="p-6 flex flex-col flex-1">
