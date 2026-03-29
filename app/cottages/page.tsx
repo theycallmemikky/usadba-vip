@@ -7,7 +7,7 @@ import { TreePine, Waves, Flame, Wifi, Car, UtensilsCrossed } from "lucide-react
 
 const amenities = [
   { icon: Waves, label: "Бассейн с подогревом" },
-  { icon: Flame, label: "Сауна и хаммам" },
+  { icon: Flame, label: "Русская баня" },
   { icon: TreePine, label: "Ландшафтный сад" },
   { icon: Wifi, label: "Высокоскоростной Wi-Fi" },
   { icon: Car, label: "Бесплатная парковка" },
@@ -50,7 +50,7 @@ export default function CottagesPage() {
           <SectionHeader
             eyebrow="Наши коттеджи"
             title="Роскошь на природе"
-            subtitle="Просторные коттеджи с панорамным видом на море, бассейном и всей инфраструктурой для комфортного отдыха"
+            subtitle="Просторные коттеджи с панорамным видом на море, бассейном и идеальными условиями для комфортного отдыха"
           />
         </AnimatedSection>
 
