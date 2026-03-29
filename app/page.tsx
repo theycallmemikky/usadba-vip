@@ -194,7 +194,7 @@ export default function HomePage() {
             <SectionHeader
               eyebrow="Наши объекты"
               title="Лучшие предложения"
-              subtitle="Выберите идеальное жильё для вашего отдыха в Сочи"
+              subtitle="Выберите идеальный вариант проживания для вашего отдыха в Сочи"
             />
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
