@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme {
   --color-gold: #5f7d8c;
   --color-gold-light: #8eb4c4;
@@ -179,5 +183,29 @@
       padding-top: 7rem;
       padding-bottom: 7rem;
     }
+  }
+
+  /* Phone button pulse glow */
+  .phone-pulse {
+    animation: phonePulse 2.5s ease-in-out infinite;
+  }
+
+  @keyframes phonePulse {
+    0%, 100% { box-shadow: 0 2px 12px rgba(95,125,140,0.4); }
+    50% { box-shadow: 0 2px 24px rgba(95,125,140,0.7), 0 0 8px rgba(95,125,140,0.3); }
+  }
+
+  /* Phone icon wiggle */
+  .animate-wiggle {
+    animation: wiggle 2s ease-in-out infinite;
+  }
+
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    10% { transform: rotate(-12deg); }
+    20% { transform: rotate(10deg); }
+    30% { transform: rotate(-8deg); }
+    40% { transform: rotate(6deg); }
+    50% { transform: rotate(0deg); }
   }
 }

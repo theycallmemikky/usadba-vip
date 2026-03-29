@@ -57,7 +57,7 @@ export default function HomePage() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(135deg, rgba(7,9,11,0.82) 0%, rgba(7,9,11,0.52) 50%, rgba(7,9,11,0.35) 100%)",
+              "linear-gradient(135deg, rgba(7,9,11,0.45) 0%, rgba(7,9,11,0.25) 50%, rgba(7,9,11,0.15) 100%)",
           }}
         />
         <div
@@ -71,13 +71,13 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <p
               className="text-xs tracking-[0.4em] uppercase mb-8 font-semibold"
-              style={{ color: "var(--color-gold-light)" }}
+              style={{ color: "#ffffff", textShadow: "0 1px 8px rgba(0,0,0,0.4)" }}
             >
               ✦ Элитный отдых в Сочи ✦
             </p>
             <h1
               className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-none mb-8"
-              style={{ fontFamily: "var(--font-display)", color: "#f0ede6" }}
+              style={{ fontFamily: "var(--font-display)", color: "#ffffff", textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}
             >
               Усадьба
               <br />
@@ -85,9 +85,9 @@ export default function HomePage() {
             </h1>
             <p
               className="text-lg md:text-xl leading-relaxed mb-10 max-w-xl"
-              style={{ color: "rgba(224,232,236,0.85)" }}
+              style={{ color: "rgba(255,255,255,0.9)", textShadow: "0 1px 8px rgba(0,0,0,0.4)" }}
             >
-              Коттеджи, апартаменты и виллы класса люкс с панорамным видом на
+              Коттеджи и апартаменты класса люкс с панорамным видом на
               Чёрное море в Хостинском районе Сочи.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -95,7 +95,7 @@ export default function HomePage() {
                 href="/cottages"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded btn-gold text-sm"
               >
-                Выбрать жильё
+                Выбрать вариант проживания
                 <ArrowRight size={16} />
               </Link>
               <Link
@@ -107,19 +107,24 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-          <span className="text-xs tracking-widest uppercase" style={{ color: "rgba(200,218,226,0.6)" }}>
+        <a
+          href="#stats"
+          className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 cursor-pointer hover:opacity-100 transition-opacity"
+          style={{ opacity: 0.7 }}
+        >
+          <span className="text-xs tracking-widest uppercase" style={{ color: "rgba(255,255,255,0.8)", textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}>
             Листать
           </span>
           <div
-            className="w-px h-12 animate-pulse"
+            className="w-px h-12 animate-bounce"
             style={{ background: "linear-gradient(to bottom, var(--color-gold), transparent)" }}
           />
-        </div>
+        </a>
       </section>
 
       {/* STATS */}
       <section
+        id="stats"
         style={{
           background: "var(--color-navy-2)",
           borderTop: "1px solid var(--color-border-gold)",

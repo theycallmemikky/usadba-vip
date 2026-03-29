@@ -49,13 +49,20 @@ export default function Navbar() {
             <Link href="/" className="flex flex-col leading-none group">
               <span
                 className="font-display text-2xl font-semibold tracking-wider gold-gradient-text"
-                style={{ fontFamily: "var(--font-display)" }}
+                style={{
+                  fontFamily: "var(--font-display)",
+                  textShadow: scrolled ? "none" : "0 1px 10px rgba(0,0,0,0.4)",
+                }}
               >
                 УСАДЬБА
               </span>
               <span
-                className="text-xs tracking-[0.35em] uppercase"
-                style={{ color: scrolled ? "var(--color-gold-muted)" : "rgba(200,220,230,0.8)", letterSpacing: "0.35em" }}
+                className="text-xs tracking-[0.35em] uppercase font-medium"
+                style={{
+                  color: scrolled ? "var(--color-gold-muted)" : "rgba(255,255,255,0.95)",
+                  letterSpacing: "0.35em",
+                  textShadow: scrolled ? "none" : "0 1px 8px rgba(0,0,0,0.4)",
+                }}
               >
                 VIP · СОЧИ
               </span>
@@ -91,10 +98,18 @@ export default function Navbar() {
             {/* Phone CTA */}
             <a
               href="tel:+79888800004"
-              className="hidden lg:flex items-center gap-2 px-4 py-2 rounded btn-outline-gold text-sm"
+              className="hidden lg:flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 hover:scale-105 phone-pulse"
+              style={{
+                background: scrolled
+                  ? "linear-gradient(135deg, var(--color-gold), var(--color-gold-muted))"
+                  : "linear-gradient(135deg, rgba(95,125,140,0.9), rgba(61,94,110,0.9))",
+                color: "#ffffff",
+                boxShadow: "0 2px 12px rgba(95,125,140,0.4)",
+                letterSpacing: "0.04em",
+              }}
             >
-              <Phone size={14} />
-              <span className="tracking-wider">+7 988 880-00-04</span>
+              <Phone size={15} className="animate-wiggle" />
+              <span>+7 988 880-00-04</span>
             </a>
 
             {/* Burger */}
