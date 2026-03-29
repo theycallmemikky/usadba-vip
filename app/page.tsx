@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowRight, Waves, Flame, TreePine, Shield, Star, Phone, MapPin } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
 import AnimatedSection from "@/components/AnimatedSection";
+import AnimatedCounter from "@/components/AnimatedCounter";
 import PropertyCard from "@/components/PropertyCard";
 import { cottages, apartments, reviews } from "@/lib/data";
 
@@ -70,13 +71,13 @@ export default function HomePage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <div className="max-w-3xl">
             <p
-              className="text-xs tracking-[0.4em] uppercase mb-8 font-semibold"
+              className="hero-reveal hero-reveal-1 text-xs tracking-[0.4em] uppercase mb-8 font-semibold"
               style={{ color: "#ffffff", textShadow: "0 1px 8px rgba(0,0,0,0.4)" }}
             >
               ✦ Элитный отдых в Сочи ✦
             </p>
             <h1
-              className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-none mb-8"
+              className="hero-reveal hero-reveal-2 font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-none mb-8"
               style={{ fontFamily: "var(--font-display)", color: "#ffffff", textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}
             >
               Усадьба
@@ -84,13 +85,13 @@ export default function HomePage() {
               <span className="italic" style={{ color: "var(--color-gold-light)", textShadow: "0 2px 20px rgba(0,0,0,0.6)" }}>VIP</span>
             </h1>
             <p
-              className="text-lg md:text-xl leading-relaxed mb-10 max-w-xl"
+              className="hero-reveal hero-reveal-3 text-lg md:text-xl leading-relaxed mb-10 max-w-xl"
               style={{ color: "rgba(255,255,255,0.9)", textShadow: "0 1px 8px rgba(0,0,0,0.4)" }}
             >
               Коттеджи и апартаменты класса люкс с панорамным видом на
               Чёрное море в Хостинском районе Сочи.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="hero-reveal hero-reveal-4 flex flex-wrap gap-4">
               <Link
                 href="/cottages"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded btn-gold text-sm"
@@ -139,7 +140,7 @@ export default function HomePage() {
                   className="font-display text-4xl md:text-5xl font-light mb-2 gold-gradient-text"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
-                  {s.value}
+                  <AnimatedCounter value={s.value} />
                 </p>
                 <p className="text-sm tracking-wide" style={{ color: "var(--color-text-muted)" }}>
                   {s.label}
@@ -163,11 +164,11 @@ export default function HomePage() {
           {features.map((f, i) => (
             <AnimatedSection key={f.title} delay={i * 120}>
               <div
-                className="p-8 rounded-2xl card-glass h-full"
+                className="p-8 rounded-2xl card-glass h-full feature-card"
                 style={{ border: "1px solid var(--color-border)" }}
               >
                 <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-6"
+                  className="feature-icon w-12 h-12 rounded-xl flex items-center justify-center mb-6"
                   style={{ background: "var(--color-gold-dim)" }}
                 >
                   <f.icon size={22} style={{ color: "var(--color-gold)" }} />
@@ -228,7 +229,7 @@ export default function HomePage() {
           {featuredReviews.map((r, i) => (
             <AnimatedSection key={r.id} delay={i * 100}>
               <div
-                className="p-8 rounded-2xl card-glass h-full"
+                className="p-8 rounded-2xl card-glass h-full review-card"
                 style={{ border: "1px solid var(--color-border)" }}
               >
                 <div className="flex gap-1 mb-4">

@@ -74,7 +74,7 @@ export default function Navbar() {
                 <Link
                   key={l.href}
                   href={l.href}
-                  className="text-sm tracking-widest uppercase transition-colors duration-200 relative group"
+                  className="nav-link-hover text-sm tracking-widest uppercase transition-colors duration-200 relative group"
                   style={{
                     color:
                       pathname === l.href
@@ -85,7 +85,7 @@ export default function Navbar() {
                 >
                   {l.label}
                   <span
-                    className="absolute -bottom-1 left-0 h-px transition-all duration-300"
+                    className="absolute -bottom-1 left-0 h-px"
                     style={{
                       background: "var(--color-gold)",
                       width: pathname === l.href ? "100%" : "0%",
@@ -139,7 +139,7 @@ export default function Navbar() {
           onClick={() => setMenuOpen(false)}
         />
         <nav className="relative flex flex-col items-center justify-center h-full gap-8">
-          {links.map((l) => (
+          {links.map((l, i) => (
             <Link
               key={l.href}
               href={l.href}
@@ -148,6 +148,11 @@ export default function Navbar() {
                 color:
                   pathname === l.href ? "var(--color-gold)" : "var(--color-text)",
                 fontFamily: "var(--font-display)",
+                ...(menuOpen ? {
+                  opacity: 0,
+                  transform: "translateY(20px)",
+                  animation: `mobileReveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) ${i * 0.06}s forwards`,
+                } : {}),
               }}
             >
               {l.label}
@@ -156,6 +161,11 @@ export default function Navbar() {
           <a
             href="tel:+79888800004"
             className="mt-4 flex items-center gap-2 px-6 py-3 rounded btn-gold text-sm"
+            style={menuOpen ? {
+              opacity: 0,
+              transform: "translateY(20px)",
+              animation: `mobileReveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) ${links.length * 0.06}s forwards`,
+            } : {}}
           >
             <Phone size={14} />
             +7 988 880-00-04

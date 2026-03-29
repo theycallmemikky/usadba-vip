@@ -208,4 +208,136 @@ html {
     40% { transform: rotate(6deg); }
     50% { transform: rotate(0deg); }
   }
+
+  /* Hero staggered text entrance */
+  .hero-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: heroReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .hero-reveal-1 { animation-delay: 0.1s; }
+  .hero-reveal-2 { animation-delay: 0.35s; }
+  .hero-reveal-3 { animation-delay: 0.6s; }
+  .hero-reveal-4 { animation-delay: 0.85s; }
+
+  @keyframes heroReveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Enhanced nav link hover underline */
+  .nav-link-hover span {
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link-hover:hover span {
+    width: 100% !important;
+  }
+
+  /* Feature card icon hover lift */
+  .feature-card {
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease, border-color 0.3s ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(95, 125, 140, 0.12);
+    border-color: var(--color-gold-muted) !important;
+  }
+
+  .feature-card:hover .feature-icon {
+    transform: scale(1.1);
+    background: var(--color-gold) !important;
+  }
+
+  .feature-card:hover .feature-icon svg {
+    color: #ffffff !important;
+  }
+
+  .feature-icon {
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), background 0.3s ease;
+  }
+
+  /* Review quote decoration */
+  .review-card {
+    position: relative;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease;
+  }
+
+  .review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(95, 125, 140, 0.1);
+  }
+
+  .review-card::before {
+    content: "\201C";
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    font-family: var(--font-display);
+    font-size: 4.5rem;
+    line-height: 1;
+    color: var(--color-gold-dim);
+    pointer-events: none;
+    opacity: 0.7;
+  }
+
+  /* Image skeleton loading */
+  .img-skeleton {
+    background: linear-gradient(90deg, var(--color-navy-2) 25%, var(--color-navy-3) 50%, var(--color-navy-2) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s ease-in-out infinite;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  /* Smooth fade for mobile menu links */
+  .mobile-link-stagger {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: mobileReveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  @keyframes mobileReveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Gallery filter tab active indicator */
+  .filter-tab {
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .filter-tab:hover:not(.filter-active) {
+    border-color: var(--color-gold-muted) !important;
+    color: var(--color-text) !important;
+  }
+
+  /* Subtle glow on gold buttons */
+  .btn-gold {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-gold::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .btn-gold:hover::after {
+    opacity: 1;
+  }
 }

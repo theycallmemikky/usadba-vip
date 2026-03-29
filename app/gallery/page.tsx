@@ -55,10 +55,10 @@ export default function GalleryPage() {
             <button
               key={cat}
               onClick={() => setActive(cat)}
-              className="px-6 py-2 rounded-full text-sm tracking-wider transition-all duration-200"
+              className={`filter-tab px-6 py-2 rounded-full text-sm tracking-wider ${active === cat ? "filter-active" : ""}`}
               style={
                 active === cat
-                  ? { background: "var(--color-gold)", color: "var(--color-navy)", fontWeight: 600 }
+                  ? { background: "var(--color-gold)", color: "var(--color-navy)", fontWeight: 600, boxShadow: "0 4px 16px rgba(95,125,140,0.3)" }
                   : { border: "1px solid var(--color-border)", color: "var(--color-text-muted)", background: "transparent" }
               }
             >
