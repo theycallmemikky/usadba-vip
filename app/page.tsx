@@ -80,8 +80,7 @@ export default function HomePage() {
               className="hero-reveal hero-reveal-2 font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-none mb-8"
               style={{ fontFamily: "var(--font-display)", color: "#ffffff", textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}
             >
-              Усадьба
-              <br />
+              Усадьба{" "}
               <span className="italic" style={{ color: "var(--color-gold-light)", textShadow: "0 2px 20px rgba(0,0,0,0.6)" }}>VIP</span>
             </h1>
             <p
