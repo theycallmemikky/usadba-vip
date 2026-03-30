@@ -94,14 +94,14 @@ export default function HomePage() {
             <div className="hero-reveal hero-reveal-4 flex flex-wrap gap-4">
               <Link
                 href="/cottages"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded btn-gold text-sm"
+                className="inline-flex items-center gap-2 px-10 py-4 rounded btn-gold text-base"
               >
                 Выбрать вариант проживания
                 <ArrowRight size={16} />
               </Link>
               <Link
                 href="/contacts"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded btn-outline-light text-sm"
+                className="inline-flex items-center gap-2 px-10 py-4 rounded btn-outline-light text-base"
               >
                 Связаться с нами
               </Link>
