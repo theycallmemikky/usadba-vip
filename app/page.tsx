@@ -264,8 +264,8 @@ export default function HomePage() {
               size="sm"
             />
           </AnimatedSection>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {["vid1.mp4", "vid2.mp4", "vid3.mp4"].map((file, i) => {
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {["vid1.mp4", "vid2.mp4"].map((file, i) => {
               const src = `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/Usadba/videos/${file}`;
               return (
                 <AnimatedSection key={src} delay={i * 120}>
