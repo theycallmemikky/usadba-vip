@@ -160,28 +160,22 @@ export default function HomePage() {
             subtitle="Комплекс Усадьба VIP предлагает Вам идеальные условия для незабываемого отдыха на черноморском побережье"
           />
         </AnimatedSection>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10">
           {features.map((f, i) => (
             <AnimatedSection key={f.title} delay={i * 120}>
-              <div
-                className="p-8 rounded-2xl card-glass h-full feature-card"
-                style={{ border: "1px solid var(--color-border)" }}
-              >
-                <div
-                  className="feature-icon w-12 h-12 rounded-xl flex items-center justify-center mb-6"
-                  style={{ background: "var(--color-gold-dim)" }}
-                >
-                  <f.icon size={22} style={{ color: "var(--color-gold)" }} />
+              <div className="flex items-start gap-5">
+                <f.icon size={24} className="mt-1 shrink-0" style={{ color: "var(--color-gold)" }} />
+                <div>
+                  <h3
+                    className="font-display text-lg font-medium mb-2"
+                    style={{ fontFamily: "var(--font-display)", color: "var(--color-text)" }}
+                  >
+                    {f.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-muted)" }}>
+                    {f.desc}
+                  </p>
                 </div>
-                <h3
-                  className="font-display text-xl font-medium mb-3"
-                  style={{ fontFamily: "var(--font-display)", color: "var(--color-text)" }}
-                >
-                  {f.title}
-                </h3>
-                <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-muted)" }}>
-                  {f.desc}
-                </p>
               </div>
             </AnimatedSection>
           ))}
