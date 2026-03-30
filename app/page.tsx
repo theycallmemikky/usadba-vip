@@ -158,6 +158,7 @@ export default function HomePage() {
             eyebrow="Наши преимущества"
             title="Всё для вашего комфорта"
             subtitle="Комплекс Усадьба VIP предлагает Вам идеальные условия для незабываемого отдыха на черноморском побережье"
+            size="md"
           />
         </AnimatedSection>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10">
@@ -217,6 +218,7 @@ export default function HomePage() {
             eyebrow="Отзывы гостей"
             title="Нам доверяют"
             subtitle="Сотни гостей уже оценили высокий уровень сервиса и красоту нашего комплекса"
+            size="md"
           />
         </AnimatedSection>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -260,6 +262,7 @@ export default function HomePage() {
               eyebrow="Видеотур"
               title="Почувствуйте атмосферу"
               subtitle="Посмотрите видео о нашем комплексе и убедитесь сами — Усадьба VIP создана для настоящего отдыха"
+              size="sm"
             />
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

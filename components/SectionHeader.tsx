@@ -3,13 +3,21 @@ interface SectionHeaderProps {
   title: string;
   subtitle?: string;
   centered?: boolean;
+  size?: "lg" | "md" | "sm";
 }
+
+const sizeClasses = {
+  lg: "text-4xl md:text-5xl lg:text-6xl",
+  md: "text-3xl md:text-4xl lg:text-5xl",
+  sm: "text-2xl md:text-3xl lg:text-4xl",
+};
 
 export default function SectionHeader({
   eyebrow,
   title,
   subtitle,
   centered = true,
+  size = "lg",
 }: SectionHeaderProps) {
   return (
     <div className={`mb-16 ${centered ? "text-center" : ""}`}>
@@ -22,7 +30,7 @@ export default function SectionHeader({
         </p>
       )}
       <h2
-        className="font-display text-4xl md:text-5xl lg:text-6xl font-light leading-tight"
+        className={`font-display ${sizeClasses[size]} font-light leading-tight`}
         style={{ fontFamily: "var(--font-display)", color: "var(--color-text)" }}
       >
         {title}
