@@ -13,7 +13,12 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, this would send to an API endpoint
+    const types: Record<string, string> = { cottage: "Коттедж", apartment: "Апартаменты", any: "Любой вариант" };
+    const subject = encodeURIComponent(`Заявка с сайта — ${types[form.type] || form.type}`);
+    const body = encodeURIComponent(
+      `Имя: ${form.name}\nТелефон: ${form.phone}\nEmail: ${form.email || "не указан"}\nТип: ${types[form.type] || form.type}\n\n${form.message || "Без сообщения"}`
+    );
+    window.open(`mailto:usadba89888800004@gmail.com?subject=${subject}&body=${body}`, "_self");
     setSubmitted(true);
   };
 
