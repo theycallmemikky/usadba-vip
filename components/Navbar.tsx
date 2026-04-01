@@ -51,7 +51,7 @@ export default function Navbar() {
                 className="font-display text-2xl font-semibold tracking-wider gold-gradient-text"
                 style={{
                   fontFamily: "var(--font-display)",
-                  filter: scrolled ? "none" : "drop-shadow(0 1px 3px rgba(0,0,0,0.7)) drop-shadow(0 0 8px rgba(0,0,0,0.4))",
+                  filter: scrolled ? "none" : "drop-shadow(0 2px 4px rgba(0,0,0,0.9)) drop-shadow(0 0 12px rgba(0,0,0,0.6)) drop-shadow(0 0 20px rgba(0,0,0,0.3))",
                 }}
               >
                 УСАДЬБА
@@ -61,7 +61,7 @@ export default function Navbar() {
                 style={{
                   color: scrolled ? "var(--color-gold-muted)" : "rgba(255,255,255,0.95)",
                   letterSpacing: "0.35em",
-                  filter: scrolled ? "none" : "drop-shadow(0 1px 3px rgba(0,0,0,0.7))",
+                  filter: scrolled ? "none" : "drop-shadow(0 2px 4px rgba(0,0,0,0.9)) drop-shadow(0 0 10px rgba(0,0,0,0.5))",
                 }}
               >
                 VIP · СОЧИ
