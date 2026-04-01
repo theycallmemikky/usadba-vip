@@ -42,7 +42,7 @@ export default function Footer() {
             </div>
             <p className="text-sm leading-relaxed" style={{ color: "var(--color-text-muted)" }}>
               Элитный комплекс для отдыха в Хостинском районе Сочи. Коттеджи,
-              апартаменты и виллы с видом на море.
+              апартаменты и квартиры с видом на море.
             </p>
             {/* Messengers */}
             <div className="flex gap-3 mt-6">
