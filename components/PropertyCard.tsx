@@ -81,7 +81,7 @@ export default function PropertyCard({ property }: { property: Property }) {
           </div>
           <div className="flex items-center gap-2 text-sm" style={{ color: "var(--color-text-muted)" }}>
             <BedDouble size={14} style={{ color: "var(--color-gold)" }} />
-            {property.bedrooms} спальн.
+            {property.bedrooms} {property.bedrooms === 1 ? "спальня" : property.bedrooms >= 2 && property.bedrooms <= 4 ? "спальни" : "спален"}
           </div>
         </div>
 
