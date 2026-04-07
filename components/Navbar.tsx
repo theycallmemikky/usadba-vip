@@ -12,7 +12,7 @@ const links = [
   { href: "/flats", label: "Квартиры" },
   { href: "/gallery", label: "Галерея" },
   { href: "/reviews", label: "Отзывы" },
-  { href: "/news", label: "Новости" },
+
   { href: "/contacts", label: "Контакты" },
 ];
 
