@@ -67,8 +67,8 @@ export default function CottagesPage() {
         <AnimatedSection>
           <SectionHeader
             eyebrow="Инфраструктура"
-            title="Всё включено"
-            subtitle="Все коттеджи полностью укомплектованы — ничего лишнего не нужно брать с собой"
+            title="Всё для вашего отдыха"
+            subtitle="Все коттеджи укомплектованы, ничего лишнего не нужно брать с собой"
           />
         </AnimatedSection>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
