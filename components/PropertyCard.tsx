@@ -16,6 +16,9 @@ export interface Property {
   longDescription: string;
   features: string[];
   price?: number;
+  price14days?: number;
+  priceMonth?: number;
+  price11months?: number;
   href: string;
 }
 

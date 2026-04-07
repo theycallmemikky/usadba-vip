@@ -114,7 +114,7 @@ export default function PropertyDetailPage({ property, backHref, backLabel }: Pr
               </p>
             </AnimatedSection>
 
-            {property.type === "cottage" && property.price && (
+            {(property.type === "cottage" || property.type === "apartment") && property.price && (
               <AnimatedSection delay={80}>
                 <h3
                   className="font-display text-xl font-medium mb-4"
@@ -123,22 +123,59 @@ export default function PropertyDetailPage({ property, backHref, backLabel }: Pr
                   Условия аренды
                 </h3>
                 <div
-                  className="p-6 rounded-2xl space-y-3"
+                  className="p-6 rounded-2xl space-y-4"
                   style={{ background: "var(--color-card)", border: "1px solid var(--color-border)" }}
                 >
                   <div className="flex items-center gap-3">
                     <CalendarDays size={18} style={{ color: "var(--color-gold)" }} />
                     <span className="text-sm" style={{ color: "var(--color-text-muted)" }}>
-                      Аренда коттеджа: от 3-х суток и более
+                      Аренда {property.type === "cottage" ? "коттеджа" : "апартаментов"}: от 3-х суток и более
                     </span>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Banknote size={18} style={{ color: "var(--color-gold)" }} />
-                    <span className="text-sm" style={{ color: "var(--color-text-muted)" }}>
-                      Стоимость суток: от {property.price.toLocaleString("ru-RU")} ₽
-                    </span>
-                  </div>
-                  <p className="text-xs pt-2" style={{ color: "var(--color-text-muted)", opacity: 0.7 }}>
+                  <table className="w-full text-sm" style={{ color: "var(--color-text-muted)" }}>
+                    <thead>
+                      <tr style={{ borderBottom: "1px solid var(--color-border)" }}>
+                        <th className="text-left py-2 font-medium" style={{ color: "var(--color-text)" }}>Срок</th>
+                        <th className="text-right py-2 font-medium" style={{ color: "var(--color-text)" }}>Стоимость</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style={{ borderBottom: "1px solid var(--color-border)" }}>
+                        <td className="py-2.5 flex items-center gap-2">
+                          <Banknote size={16} style={{ color: "var(--color-gold)" }} />
+                          Сутки
+                        </td>
+                        <td className="py-2.5 text-right font-medium" style={{ color: "var(--color-text)" }}>
+                          от {property.price.toLocaleString("ru-RU")} ₽
+                        </td>
+                      </tr>
+                      {property.price14days && (
+                        <tr style={{ borderBottom: "1px solid var(--color-border)" }}>
+                          <td className="py-2.5">14 дней</td>
+                          <td className="py-2.5 text-right font-medium" style={{ color: "var(--color-text)" }}>
+                            от {property.price14days.toLocaleString("ru-RU")} ₽
+                          </td>
+                        </tr>
+                      )}
+                      {property.priceMonth && (
+                        <tr style={{ borderBottom: "1px solid var(--color-border)" }}>
+                          <td className="py-2.5">Месяц</td>
+                          <td className="py-2.5 text-right font-medium" style={{ color: "var(--color-text)" }}>
+                            от {property.priceMonth.toLocaleString("ru-RU")} ₽
+                          </td>
+                        </tr>
+                      )}
+                      {property.price11months && (
+                        <tr>
+                          <td className="py-2.5">От 11 месяцев</td>
+                          <td className="py-2.5 text-right font-medium" style={{ color: "var(--color-text)" }}>
+                            от {property.price11months.toLocaleString("ru-RU")} ₽/мес
+                          </td>
+                        </tr>
+                      )}
+                    </tbody>
+                  </table>
+                  <p className="text-xs pt-1" style={{ color: "var(--color-text-muted)", opacity: 0.7 }}>
                     Стоимость аренды рассчитывается индивидуально в зависимости от срока проживания
                   </p>
                 </div>
