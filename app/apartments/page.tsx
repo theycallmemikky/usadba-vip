@@ -65,9 +65,8 @@ export default function ApartmentsPage() {
         <div className="gold-divider mb-20" />
         <AnimatedSection>
           <SectionHeader
-            eyebrow="Всё включено"
             title="Продумано до мелочей"
-            subtitle="Каждый апартамент оборудован всем необходимым для комфортного и приятного проживания"
+            subtitle="Все виды апартаментов оборудованы всем необходимым для комфортного и приятного проживания"
           />
         </AnimatedSection>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
