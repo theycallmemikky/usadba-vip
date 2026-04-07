@@ -108,7 +108,6 @@ export const cottages: Property[] = [
       `${C10}/kottedzh-10-photos-big%20(2).jpg`,
       `${C10}/kottedzh-10-photos-big%20(3).jpg`,
       `${C10}/kottedzh-10-photos-big%20(4).jpg`,
-      `${C10}/kottedzh-10-photos-big%20(5).jpg`,
       `${C10}/kottedzh-10-photos-big%20(6).jpg`,
     ],
     area: 150,
