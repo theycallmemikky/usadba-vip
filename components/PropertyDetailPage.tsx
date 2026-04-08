@@ -182,6 +182,47 @@ export default function PropertyDetailPage({ property, backHref, backLabel }: Pr
               </AnimatedSection>
             )}
 
+            {property.type === "flat" && property.price11months && (
+              <AnimatedSection delay={80}>
+                <h3
+                  className="font-display text-xl font-medium mb-4"
+                  style={{ fontFamily: "var(--font-display)", color: "var(--color-text)" }}
+                >
+                  Условия аренды
+                </h3>
+                <div
+                  className="p-6 rounded-2xl space-y-4"
+                  style={{ background: "var(--color-card)", border: "1px solid var(--color-border)" }}
+                >
+                  <div className="flex items-center gap-3">
+                    <CalendarDays size={18} style={{ color: "var(--color-gold)" }} />
+                    <span className="text-sm" style={{ color: "var(--color-text-muted)" }}>
+                      Долгосрочная аренда от 11 месяцев
+                    </span>
+                  </div>
+                  <table className="w-full text-sm" style={{ color: "var(--color-text-muted)" }}>
+                    <thead>
+                      <tr style={{ borderBottom: "1px solid var(--color-border)" }}>
+                        <th className="text-left py-2 font-medium" style={{ color: "var(--color-text)" }}>Срок</th>
+                        <th className="text-right py-2 font-medium" style={{ color: "var(--color-text)" }}>Стоимость</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="py-2.5 flex items-center gap-2">
+                          <Banknote size={16} style={{ color: "var(--color-gold)" }} />
+                          От 11 месяцев
+                        </td>
+                        <td className="py-2.5 text-right font-medium" style={{ color: "var(--color-text)" }}>
+                          {property.price11months.toLocaleString("ru-RU")} ₽/мес
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </AnimatedSection>
+            )}
+
             <AnimatedSection delay={100}>
               <h3
                 className="font-display text-xl font-medium mb-4"
