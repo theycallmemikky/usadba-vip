@@ -20,7 +20,7 @@ const contactDetails = [
     icon: MapPin,
     label: "Адрес",
     value: "Хостинский район, ул. Звёздная, 22, Сочи",
-    href: "https://maps.yandex.ru/?text=Сочи+Хостинский+ул.+Звёздная+22",
+    href: "https://yandex.com/maps/239/sochi/house/zvyozdnaya_ulitsa_22k5/Z0AYfgNjSkQHQFppfXlzeH5mYg==/?ll=39.843422%2C43.529243&z=19.06",
   },
   {
     icon: Clock,
@@ -113,15 +113,6 @@ export default function ContactsPage() {
                   >
                     <MessageCircle size={16} />
                     MAX
-                  </a>
-                  <a
-                    href="https://t.me/+79888800004"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-5 py-3 rounded-xl btn-outline-gold text-sm flex-1 justify-center"
-                  >
-                    <MessageCircle size={16} />
-                    Telegram
                   </a>
                 </div>
               </div>

@@ -55,15 +55,6 @@ export default function Footer() {
                 <MessageCircle size={14} />
                 MAX
               </a>
-              <a
-                href="https://t.me/+79888800004"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 rounded text-xs btn-outline-gold"
-              >
-                <MessageCircle size={14} />
-                Telegram
-              </a>
             </div>
           </div>
 
