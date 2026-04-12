@@ -1,9 +1,17 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 import AnimatedSection from "@/components/AnimatedSection";
 import PropertyCard from "@/components/PropertyCard";
 import { flats } from "@/lib/data";
 import { Wifi, Sofa, Monitor, Shirt, UtensilsCrossed } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Квартиры в Сочи — долгосрочная аренда квартир в Хостинском районе",
+  description:
+    "Долгосрочная аренда квартир в Сочи: ЖК «Голландский», ул. Звёздная 22-16, 22-17. Современный ремонт, вся необходимая мебель и техника. От 35 000 ₽/мес.",
+  alternates: { canonical: "/flats" },
+};
 
 const amenities = [
   { icon: Wifi, label: "Wi-Fi" },

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Waves, Flame, TreePine, Shield, Star, Phone, MapPin } from "lucide-react";
@@ -6,6 +7,13 @@ import AnimatedSection from "@/components/AnimatedSection";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import PropertyCard from "@/components/PropertyCard";
 import { cottages, apartments, reviews } from "@/lib/data";
+
+export const metadata: Metadata = {
+  title: "Усадьба VIP — Элитный отдых в Сочи | Коттеджи, апартаменты, квартиры",
+  description:
+    "Элитный коттеджный комплекс Усадьба VIP в Хостинском районе Сочи. Аренда коттеджей, апартаментов и квартир с видом на море. Бассейн, баня, зона барбекю. До моря 15 минут пешком.",
+  alternates: { canonical: "/" },
+};
 
 const features = [
   {

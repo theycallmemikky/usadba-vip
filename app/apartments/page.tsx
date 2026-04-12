@@ -1,9 +1,17 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 import AnimatedSection from "@/components/AnimatedSection";
 import PropertyCard from "@/components/PropertyCard";
 import { apartments } from "@/lib/data";
 import { Wifi, Sofa, Monitor, Shirt, UtensilsCrossed } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Апартаменты в Сочи — аренда апартаментов в элитном комплексе",
+  description:
+    "Аренда комфортабельных апартаментов в коттеджном комплексе Усадьба VIP, Хостинский район Сочи. Апартаменты с видом на море, на охраняемой территории с бассейном и баней.",
+  alternates: { canonical: "/apartments" },
+};
 
 const amenities = [
   { icon: Wifi, label: "Wi-Fi" },

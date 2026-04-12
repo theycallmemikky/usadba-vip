@@ -1,9 +1,17 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 import AnimatedSection from "@/components/AnimatedSection";
 import PropertyCard from "@/components/PropertyCard";
 import { cottages } from "@/lib/data";
 import { TreePine, Waves, Flame, Wifi, Car, UtensilsCrossed } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Коттеджи в Сочи — аренда элитных коттеджей с видом на море",
+  description:
+    "Аренда элитных коттеджей в Хостинском районе Сочи. Коттеджи с видом на море, бассейном, баней и всеми удобствами. Президентский коттедж, эко-коттеджи. До моря 15 минут.",
+  alternates: { canonical: "/cottages" },
+};
 
 const amenities = [
   { icon: Waves, label: "Бассейн с подогревом" },

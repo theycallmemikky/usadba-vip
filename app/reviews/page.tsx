@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import { Star, Quote } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
 import AnimatedSection from "@/components/AnimatedSection";
 import { reviews } from "@/lib/data";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Отзывы гостей — Усадьба VIP Сочи",
+  description:
+    "Отзывы гостей об отдыхе в коттеджном комплексе Усадьба VIP в Сочи. Реальные впечатления о коттеджах, апартаментах и сервисе.",
+  alternates: { canonical: "/reviews" },
+};
 
 export default function ReviewsPage() {
   return (

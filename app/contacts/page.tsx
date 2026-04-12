@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import SectionHeader from "@/components/SectionHeader";
 import AnimatedSection from "@/components/AnimatedSection";
 import ContactForm from "@/components/ContactForm";
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Контакты — Усадьба VIP Сочи, ул. Звёздная 22",
+  description:
+    "Контакты Усадьбы VIP в Сочи. Телефон: +7 988 880-00-04. Адрес: Хостинский район, ул. Звёздная 22. Бронирование коттеджей, апартаментов и квартир.",
+  alternates: { canonical: "/contacts" },
+};
 
 const contactDetails = [
   {
