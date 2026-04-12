@@ -19,7 +19,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE_URL = "https://theycallmemikky.github.io/usadba-vip";
+const SITE_URL = "https://usadba-vip.ru";
 const SITE_NAME = "Усадьба VIP Сочи";
 const OG_IMAGE = `${SITE_URL}/Usadba/territory/territory_cottages/00c3af2c.jpg`;
 

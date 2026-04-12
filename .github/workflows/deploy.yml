@@ -31,8 +31,6 @@ jobs:
 
       - name: Build
         run: npm run build
-        env:
-          NEXT_PUBLIC_BASE_PATH: /usadba-vip
 
       - uses: actions/configure-pages@v5
 

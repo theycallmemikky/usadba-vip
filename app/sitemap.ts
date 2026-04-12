@@ -3,7 +3,7 @@ import { cottages, apartments, flats } from "@/lib/data";
 
 export const dynamic = "force-static";
 
-const SITE_URL = "https://theycallmemikky.github.io/usadba-vip";
+const SITE_URL = "https://usadba-vip.ru";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
