@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export const dynamic = "force-static";
 
-const SITE_URL = "https://usadba-vip.ru";
+const SITE_URL = "https://theycallmemikky.github.io/usadba-vip";
 
 export default function robots(): MetadataRoute.Robots {
   return {
